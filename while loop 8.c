@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n,streak,temp=0,count=0;
+    scanf("%d",&n);
+    while(n>=0){
+        scanf("%d",&streak);
+        if(streak==0){
+            count++;
+            if(count>temp){
+            temp=count;
+        }
+        }else{
+            count=0;
+        }
+    n--;
+    }
+    printf("Longest Default Streak:%d",temp);
+}
